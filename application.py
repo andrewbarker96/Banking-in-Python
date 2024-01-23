@@ -1,5 +1,5 @@
-from Banking import Bank
-from Banking import CreditCard
+from banking import BankAccounts
+from creditcard import CreditCard
 from separator import Separator
 
 print()
@@ -7,8 +7,8 @@ print()
 
 def main():
     # Accounts
-    account1 = Bank("CheckingAccount", "123 ABC Street", 7691, 1000, 2.50, 25)
-    account2 = Bank("SavingsAccount", "123 ABC Street", 8007, 1000, 0, 50)
+    account1 = BankAccounts("CheckingAccount", "123 ABC Street", 7691, 1000, 2.50, 25)
+    account2 = BankAccounts("SavingsAccount", "123 ABC Street", 8007, 1000, 0, 50)
     creditcard1 = CreditCard("CreditCard", "123 ABC Street", 3352, 350, 3500, 21)
 
     # Starting Balances
