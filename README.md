@@ -4,20 +4,16 @@ This project is a simple bank account management system implemented in Python. I
 
 ## Features
 
-* Create and manage checking accounts and credit cards
-* Deposit and withdraw funds
-* Transfer funds between accounts
-* Pay off credit card balances
+- Create and manage checking accounts and credit cards
+- Deposit and withdraw funds
+- Transfer funds between accounts
+- Pay off credit card balances
 
 ## Classes
 
-* `BankAccounts`: This class represents a generic bank account (found in banking.py).
-* `CreditCard`: This class represents a credit card (found in creditcard.py).
+- `BankAccounts`: This class represents a generic bank account (found in `banking.py`).
+- `CreditCard`: This class represents a credit card (found in `creditcard.py`).
 
 ## Usage
 
-First, create instances of the `CheckingAccount` and `CreditCard` classes:
-
-```python
-checking_account = CheckingAccount("Checking", 7691, 1000, 1.50)
-credit_card = CreditCard("Credit", 1234, 500, 2000, 0.15)
+Located in `application.py` is the executable code demonstrating how the classes integrate with one another. This can be modified to further test the classes and their abilities.
