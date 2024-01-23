@@ -1,4 +1,4 @@
-from Classes.creditcard import CreditCard
+from Classes.CreditCard import CreditCard
 
 
 class BankAccounts:

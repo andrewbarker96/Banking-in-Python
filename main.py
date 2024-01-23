@@ -1,5 +1,5 @@
-from Classes.banking import BankAccounts
-from Classes.creditcard import CreditCard
+from Classes.BankAccounts import BankAccounts
+from Classes.CreditCard import CreditCard
 
 print()
 
