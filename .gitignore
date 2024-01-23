@@ -1,1 +1,9 @@
 .DS_Store
+
+__pycache__/Banking.cpython-312.pyc
+__pycache__/creditcard.cpython-312.pyc
+__pycache__/separator.cpython-312.pyc
+Classes/__pycache__/banking.cpython-312.pyc
+__pycache__/test_*.cpython-312-pytest-7.4.4.pyc
+Classes/__pycache__/banking.cpython-312.pyc
+Classes/__pycache__/banking.cpython-312.pyc
