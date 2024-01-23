@@ -6,6 +6,7 @@ print()
 
 def separator():
     print("-" * 50)
+    
 
 
 def main():
@@ -51,7 +52,7 @@ def main():
     separator()
 
     # Credit Card Limit Reached
-    creditcard1.transaction(3500)
+    creditcard1.transaction(2999.99)
     print(creditcard1)
 
     separator()
