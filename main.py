@@ -1,33 +1,69 @@
-from banking import BankAccounts
-from creditcard import CreditCard
-from separator import Separator
+from Classes.banking import BankAccounts
+from Classes.creditcard import CreditCard
 
 print()
 
 
+def separator():
+    print("-" * 50)
+
+
 def main():
     # Accounts
-    account1 = BankAccounts("CheckingAccount", "123 ABC Street", 7691, 1000, 2.50, 25)
-    account2 = BankAccounts("SavingsAccount", "123 ABC Street", 8007, 1000, 0, 50)
+    checkings = BankAccounts("CheckingAccount", "123 ABC Street", 7691, 1000, 2.50, 25)
+    savings = BankAccounts("SavingsAccount", "123 ABC Street", 8007, 1000, 0, 50)
     creditcard1 = CreditCard("CreditCard", "123 ABC Street", 3352, 350, 3500, 21)
 
     # Starting Balances
-    print(account1)
-    print(account2)
+    print(checkings)
+    print(savings)
     print(creditcard1)
 
-    Separator()
+    separator()
+
+    # Checkings Account Transactions
+    checkings.debitTransaction(100)
+    checkings.creditTransaction(5)
+    checkings.withdraw(20)
+    checkings.deposit(100)
+    print(checkings)
+
+    separator()
 
     # Transfering From Checkings into Savings
-    account1.transfer(account2, 250)
-    print(account1)
-    print(account2)
+    checkings.transfer(savings, 250)
+    print(checkings)
+    print(savings)
 
-    Separator()
+    separator()
 
     # Transfering From Checkings into Credit Card
-    account1.transfer(creditcard1, 250)
-    print(account1)
+    checkings.transfer(creditcard1, 250)
+    print(checkings)
+    print(creditcard1)
+
+    separator()
+
+    # Checkings Account Overdraft Charge
+    checkings.debitTransaction(473)
+    print(checkings)
+
+    separator()
+
+    # Credit Card Limit Reached
+    creditcard1.transaction(3500)
+    print(creditcard1)
+
+    separator()
+
+    # Successful Credit Card Transaction
+    creditcard1.transaction(225)
+    print(creditcard1)
+
+    separator()
+    # Final Account Balances
+    print(checkings)
+    print(savings)
     print(creditcard1)
 
 

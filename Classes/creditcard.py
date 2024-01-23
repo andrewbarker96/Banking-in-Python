@@ -16,9 +16,8 @@ class CreditCard:
     def transaction(self, amount):
         if self.__balance + amount <= self.limit:
             self.__balance += amount
-            return self.__balance
         else:
-            print("Transaction Declined")
+            print("Transaction Declined - Charge Exceeds Available Credit Limit")
 
     def __str__(self):
         return f"{self.name}-{self.accountNumber} Balance = ${self.__balance:,.2f}"
