@@ -1,7 +1,7 @@
 from Classes.CreditCard import CreditCard
 
 
-class BankAccounts:
+class BankAccount:
     def __init__(
         self, name, address, accountNumber, __balance, __creditFee, overdraftFee
     ):
