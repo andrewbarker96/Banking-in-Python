@@ -6,13 +6,12 @@ print()
 
 def separator():
     print("-" * 50)
-    
 
 
 def main():
     # Accounts
-    checkings = BankAccounts("CheckingAccount", "123 ABC Street", 7691, 1000, 2.50, 25)
-    savings = BankAccounts("SavingsAccount", "123 ABC Street", 8007, 1000, 0, 50)
+    checkings = BankAccount("CheckingAccount", "123 ABC Street", 7691, 1000, 2.50, 25)
+    savings = BankAccount("SavingsAccount", "123 ABC Street", 8007, 1000, 0, 50)
     creditcard1 = CreditCard("CreditCard", "123 ABC Street", 3352, 350, 3500, 21)
 
     # Starting Balances
