@@ -37,7 +37,7 @@ class BankAccount:
 
     def transfer(self, target_account, amount):
         self.withdraw(amount)
-        if isinstance(target_account, BankAccounts):
+        if isinstance(target_account, BankAccount):
             target_account.deposit(amount)
         elif isinstance(target_account, CreditCard):
             target_account.deposit(amount)
